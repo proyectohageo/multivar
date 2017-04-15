@@ -12,7 +12,7 @@ Se trata de una muestra de datos sobre clasificaciones de mensajes por presencia
 
 ![Imagen](https://github.com/proyectohageo/multivar/blob/master/spam1.png)
 
-..* Las primeras 48 variables contiene  la frecuencia de la palabra en el email, si la clase comienza con num, se trata del numero en el mensaje.
+* Las primeras 48 variables contiene  la frecuencia de la palabra en el email, si la clase comienza con num, se trata del numero en el mensaje.
 ..* Las variables 49 al 54 indican la frecuencia de los caracteres ‘;’, ‘(’, ‘[’, ‘!’, ‘\$’, and ‘\#’.
 ..* Las variables 55 al 57 contienen el promedio de palabras, la longitud y el total de letras en mayusculas.
 ..* La variable 58 indical el tipo de email como "spam" o "no spam"
