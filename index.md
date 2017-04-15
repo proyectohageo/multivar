@@ -47,7 +47,7 @@ M <- abs(cor(datosSpam[,-58]))
 ```markdown
 diag(M) <- 0
 ```
-### cuales de las palabras tienen mayor correlacion
+### ¿cuáles de las palabras tienen mayor correlación?
 ```markdown
 which(M > 0.8, arr.ind=T)
        row col
@@ -58,11 +58,44 @@ direct  40  34
 num857  32  40
 num415  34  40
 ```
-# cual es el nombre de las variables correlacionadas
+### ¿Cuál es el nombre de las variables correlacionadas?
 ```markdown
 names(spam)[c(34, 32)]
 [1] "num415" "num857"
 ```
+![Grafico 6](https://github.com/proyectohageo/multivar/blob/master/plot_var1_var2.png)
+
+* El objetivo del ACP es de reducir la redundancia y comprimir la información
+### Podriamos rotar los graficos(Sobre esto más adelante)
+
+```markdown
+X <- 0.71 * datosSpam$num415 + 0.71 * datosSpam$num857
+Y <- 0.71 * datosSpam$num415 - 0.71 * datosSpam$num857
+plot(X, Y)
+```
+
+![Grafico 7](https://github.com/proyectohageo/multivar/blob/master/rotar1.png)
+
+### Para obtener los componentes principales utilizamos - prcomp de las variables con mas correlación
+```markdown
+subSpam <- spam[, c(34, 32)]
+prComp <- prcomp(subSpam)
+plot(prComp$x[, 1], prComp$x[, 2])
+![Grafico 8](https://github.com/proyectohageo/multivar/blob/master/rotar_princomp1.png)
+
+prComp$rotation
+```
+### Probando PCA en datos marcados como SPAM
+```markdown
+typeColor <- ((spam$type=="spam") * 1 + 1)
+typeColor
+prComp <- prcomp(log10(spam[,-58]+1))
+```
+# la primera componente capta mas datos que el segundo componente
+```markdown
+plot(prComp$x[,1], prComp$x[,2], col=typeColor, xlab="PrinComp1", ylab="PrinComp2")
+```
+![Grafico 9](https://github.com/proyectohageo/multivar/blob/master/princomp1.png)
 
 ```markdown
 Syntax highlighted code block
