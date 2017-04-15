@@ -10,7 +10,7 @@ Los filtros automáticos antispam analizan el contenido de los mensajes buscando
 
 Se trata de una muestra de datos sobre clasificaciones de mensajes por presencia de palabra en el mensaje con un resultado "Spam" o "No Spam":
 
-!<img src="https://github.com/proyectohageo/multivar/blob/master/spam1.png" alt="Imagen" class="inline"/>(https://github.com/proyectohageo/multivar/blob/master/spam1.png)
+<img src="https://github.com/proyectohageo/multivar/blob/master/spam1.png" alt="Imagen" class="inline"/>(
 
 
 
