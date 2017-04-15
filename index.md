@@ -35,6 +35,30 @@ Se trata de una muestra de datos sobre clasificaciones de mensajes por presencia
 ## Porcentaje relativo por palabra de Spam
 ![Grafico 4](https://github.com/proyectohageo/multivar/blob/master/graf4.png)
 
+## Visualizacion de conglomerados atípicos
+![Grafico 5](https://github.com/proyectohageo/multivar/blob/master/andrews.png)
+
+# Fase 1:
+# Buscando correlaciones entre las palabras tomando su valor absoluto
+M <- abs(cor(datosSpam[,-58]))
+> 
+> # cada palabra tiene correlacion de 1 consigo misma, entonces remover la diagonal
+> diag(M) <- 0
+> 
+> # cuales de las palabras tienen mayor correlacion
+> which(M > 0.8, arr.ind=T)
+       row col
+num415  34  32
+direct  40  32
+num857  32  34
+direct  40  34
+num857  32  40
+num415  34  40
+> 
+> # cual es el nombre de las variables correlacionadas
+> names(spam)[c(34, 32)]
+[1] "num415" "num857"
+
 ```markdown
 Syntax highlighted code block
 
