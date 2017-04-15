@@ -10,6 +10,8 @@ Los filtros automáticos antispam analizan el contenido de los mensajes buscando
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
+[[https://github.com/proyectohageo/multivar/blob/master/spam1.png|alt=spam]]
+
 ```markdown
 Syntax highlighted code block
 
