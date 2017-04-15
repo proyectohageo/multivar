@@ -93,6 +93,8 @@ prComp$rotation
 num415 0.7080625  0.7061498
 num857 0.7061498 -0.7080625
 ```
+En este caso particular la primera componente principal, la que explica la mayor variabilidad es la suma de estas dos variables, y la segunda que explica la mayor variabilidad es la resta de estas dos variables.
+
 ### Probando PCA en datos marcados como SPAM
 ```markdown
 typeColor <- ((spam$type=="spam") * 1 + 1)
