@@ -99,6 +99,9 @@ En este caso particular la primera componente principal, la que explica la mayor
 ```markdown
 typeColor <- ((spam$type=="spam") * 1 + 1)
 typeColor
+```
+El color negro representa a los emails normales y el rojo representa a los mensajes de Spam.
+```markdown
 prComp <- prcomp(log10(spam[,-58]+1))
 ```
 ### la primera componente capta mas datos que el segundo componente
@@ -107,13 +110,16 @@ plot(prComp$x[,1], prComp$x[,2], col=typeColor, xlab="PrinComp1", ylab="PrinComp
 ```
 ![Grafico 9](https://github.com/proyectohageo/multivar/blob/master/princomp1.png)
 
-### También se puede utilizar Caret para ACP con caret con metodo 'pca'(Principal Component Analysis) y el número de componentes deseado
+Se puede ver que existe un poco de separacion entre los mensajes de spam y los mensajes de email normales, en otras palabras los mensajes de spam tienden a tener un valor mas alto que el componente principal PrinComp1.
+
+También se puede utilizar Caret para ACP con la funcion *preProcess* con caret con metodo 'pca'(Principal Component Analysis) y el número de componentes deseado que en este caso es 2. 
 ```markdown
 preProc <- preProcess(log10(spam[, -58]+1), method="pca", pcaComp=2)
 ```
 * Se utiliza una transformacion de datos con la funcion log10, y adicionandole 1 a esto. Esto hace que la los datos sean un poco mas Gaussianos. Esto ayuda porque algunas variables estan muy desviadas , mientras que otras estan muy bien. A veces es necesario hacer esto para que el PCA sea sensible https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4120293/#s3title
 ```markdown
-spamPC <- predict(preProc, log10(spam[, -58]+1))
-plot(spamPC[, 1], spamPC[, 2], col=typeColor)
+spamCP <- predict(preProc, log10(spam[, -58]+1))
+plot(spamCP[, 1], spamCP[, 2], col=typeColor)
 ```
 ![Grafico 10](https://github.com/proyectohageo/multivar/blob/master/princomp2.png)
+Se ve de la misma manera que existe separacion entre los mensajes de email y mensajes de spam, preProcess hace el ajuste hacia un modelo que posteriormente podria servirnos para predecir valores y tener un sistema de identificacion de Spam
