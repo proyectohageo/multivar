@@ -81,8 +81,11 @@ plot(X, Y)
 subSpam <- spam[, c(34, 32)]
 prComp <- prcomp(subSpam)
 plot(prComp$x[, 1], prComp$x[, 2])
+```
+
 ![Grafico 8](https://github.com/proyectohageo/multivar/blob/master/rotar_princomp.png)
 
+```markdown
 prComp$rotation
       PC1        PC2
 num415 0.7080625  0.7061498
