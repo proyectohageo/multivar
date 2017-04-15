@@ -38,12 +38,12 @@ Se trata de una muestra de datos sobre clasificaciones de mensajes por presencia
 ## Visualizacion de conglomerados atípicos
 ![Grafico 5](https://github.com/proyectohageo/multivar/blob/master/andrews.png)
 
-# Fase 1:
+# Primera Fase: Análisis de Componentes Principales 
 ### Buscando correlaciones entre las palabras tomando su valor absoluto
 ```markdown
 M <- abs(cor(datosSpam[,-58]))
 ``` 
-### cada palabra tiene correlacion de 1 consigo misma, entonces remover la diagonal
+### cada palabra tiene correlación de 1 consigo misma, entonces remover la diagonal
 ```markdown
 diag(M) <- 0
 ```
