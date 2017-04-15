@@ -6,11 +6,12 @@ Hay tecnologías desarrolladas en esta dirección: por ejemplo el remitente pued
 
 Los filtros automáticos antispam analizan el contenido de los mensajes buscando, por ejemplo, palabras como george, meeting, y sex que son las más usuales en los mensajes no deseados. No se recomienda utilizar estas palabras en la correspondencia por correo electrónico: el mensaje podría ser calificado como no deseado por los sistemas automáticos anti correo masivo.
 
-### Markdown
+### Sobre los datos
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Se trata de una muestra de datos sobre clasificaciones de mensajes por presencia de palabra en el mensaje con un resultado "Spam" o "No Spam":
 
-![Image](https://github.com/proyectohageo/multivar/blob/master/spam1.png)
+!<img src="https://github.com/proyectohageo/multivar/blob/master/spam1.png" alt="Imagen" class="inline"/>(https://github.com/proyectohageo/multivar/blob/master/spam1.png)
+
 
 
 ```markdown
