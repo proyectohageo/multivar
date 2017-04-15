@@ -104,7 +104,7 @@ plot(prComp$x[,1], prComp$x[,2], col=typeColor, xlab="PrinComp1", ylab="PrinComp
 ```markdown
 preProc <- preProcess(log10(spam[, -58]+1), method="pca", pcaComp=2)
 ```
-*Se utiliza una transformacion de datos con la funcion log10, y adicionandole 1 a esto. Esto hace que la los datos sean un poco mas Gaussianos. Esto ayuda porque algunas variables estan muy desviadas , mientras que otras estan muy bien. A veces es necesario hacer esto para que el PCA sea sensible
+* Se utiliza una transformacion de datos con la funcion log10, y adicionandole 1 a esto. Esto hace que la los datos sean un poco mas Gaussianos. Esto ayuda porque algunas variables estan muy desviadas , mientras que otras estan muy bien. A veces es necesario hacer esto para que el PCA sea sensible
 ```markdown
 spamPC <- predict(preProc, log10(spam[, -58]+1))
 plot(spamPC[, 1], spamPC[, 2], col=typeColor)
