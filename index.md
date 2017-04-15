@@ -1,9 +1,10 @@
 ## PROYECTO DE ANÁLISIS DE DATOS MULTIVARIADO
 
+El correo no solicitado supone actualmente la mayor parte de los mensajes electrónicos intercambiados en Internet, siendo utilizado para anunciar productos y servicios de dudosa calidad. 
 
-You can use the [editor on GitHub](https://github.com/proyectohageo/multivar/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+Hay tecnologías desarrolladas en esta dirección: por ejemplo el remitente puede firmar sus mensajes mediante criptografía de clave pública.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Los filtros automáticos antispam analizan el contenido de los mensajes buscando, por ejemplo, palabras como george, meeting, y sex que son las más usuales en los mensajes no deseados. No se recomienda utilizar estas palabras en la correspondencia por correo electrónico: el mensaje podría ser calificado como no deseado por los sistemas automáticos anti correo masivo.
 
 ### Markdown
 
