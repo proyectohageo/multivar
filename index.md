@@ -122,4 +122,5 @@ spamCP <- predict(preProc, log10(spam[, -58]+1))
 plot(spamCP[, 1], spamCP[, 2], col=typeColor)
 ```
 ![Grafico 10](https://github.com/proyectohageo/multivar/blob/master/princomp2.png)
+
 Se ve de la misma manera que existe separacion entre los mensajes de email y mensajes de spam, preProcess hace el ajuste hacia un modelo que posteriormente podria servirnos para predecir valores y tener un sistema de identificacion de Spam
