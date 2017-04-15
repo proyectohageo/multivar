@@ -39,7 +39,7 @@ prComp$rotation
 typeColor <- ((spam$type=="spam") * 1 + 1)
 typeColor
 prComp <- prcomp(log10(spam[,-58]+1))
-# first component capture more information on data than the second one
+# El primer componente captura mas datos que el segundo componente
 plot(prComp$x[,1], prComp$x[,2], col=typeColor, xlab="PrinComp1", ylab="PrinComp2")
 
 # PCA con caret con metodo 'pca' y el numero de componentes
