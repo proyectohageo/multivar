@@ -3,7 +3,7 @@ library(RColorBrewer)
 library(caret)
 library(kernlab)
 CUSTOM_COLORS_PLOT <- colorRampPalette(brewer.pal(10, "Set3"))
-#  load cleaned data set
+#  Cargando el conjunto de datos
 data(spam)
 inTrain <- createDataPartition(y=spam$type, p=0.75, list=FALSE)
 datosSpam <- spam[inTrain, ]
