@@ -63,6 +63,8 @@ num415  34  40
 names(spam)[c(34, 32)]
 [1] "num415" "num857"
 ```
+Esto significa que los mensajes en los que el número 415 aparece también aparece 857 frecuentemente.
+
 ![Grafico 6](https://github.com/proyectohageo/multivar/blob/master/plot_var1_var2.png)
 
 * El objetivo del ACP es de reducir la redundancia y comprimir la información
