@@ -13,7 +13,10 @@ Se trata de una muestra de datos sobre clasificaciones de mensajes por presencia
 ![Imagen](https://github.com/proyectohageo/multivar/blob/master/spam1.png)
 
 *Nº* | *Palabra1* | *Palabra2* | ...| *PalabraN* | *Tipo*
---- | --- | --- | --- | --- | --- | ---
+--- | --- | --- | --- | --- | ---
+
+
+
 *Still* | `renders` | **nicely**
 1 | 2 | 3
 
