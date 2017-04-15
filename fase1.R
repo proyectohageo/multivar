@@ -1,4 +1,4 @@
-# 2. Palabras correlacionadas
+# Palabras correlacionadas en mensajes de SPAM
 library(caret)
 library(kernlab)
 data(spam)
