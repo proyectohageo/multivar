@@ -22,9 +22,9 @@ Se trata de una muestra de datos sobre clasificaciones de mensajes por presencia
 1 | 0.21 | 0 | ... | 0.13 | 0.778 | 0 | ... | 3.756|61   | 278 |   spam
 
 
-*Still* | `renders` | **nicely**
-1 | 2 | 3
-
+# Fase 0
+## Cantidad de Email vs. Cantidad de Spam en la muestra de datos
+![Imagen](https://github.com/proyectohageo/multivar/blob/master/fig1.png)
 
 ```markdown
 Syntax highlighted code block
