@@ -24,7 +24,16 @@ Se trata de una muestra de datos sobre clasificaciones de mensajes por presencia
 
 # Fase 0
 ## Cantidad de Email vs. Cantidad de Spam en la muestra de datos
-![Imagen](https://github.com/proyectohageo/multivar/blob/master/fig1.png)
+![Grafico 1](https://github.com/proyectohageo/multivar/blob/master/graf1.png)
+
+## Porcentaje promedio de caracteres o palabras
+![Grafico 2](https://github.com/proyectohageo/multivar/blob/master/graf2.png)
+
+## Porcentaje relativo por palabra de Email
+![Grafico 3](https://github.com/proyectohageo/multivar/blob/master/graf3.png)
+
+## Porcentaje relativo por palabra de Spam
+![Grafico 4](https://github.com/proyectohageo/multivar/blob/master/graf4.png)
 
 ```markdown
 Syntax highlighted code block
